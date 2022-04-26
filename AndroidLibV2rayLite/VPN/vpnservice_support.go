@@ -7,7 +7,6 @@ import (
 	"log"
 	"net"
 	"os"
-	"strings"
 	"sync"
 	"time"
 
@@ -19,7 +18,7 @@ import (
 )
 
 type protectSet interface {
-	Protect(int) int
+	Protect(int) bool
 }
 
 type resolved struct {
